@@ -54,6 +54,7 @@ I've removed the columns that aren't needed for modeling.
 
 # Model Comparision
 ![alt text](https://github.com/pragathi1234/ChicagoTaxiTrips/blob/main/images/Screenshot%202021-12-14%20at%207.39.57%20PM.png)
+- I have choosen AUC metric because, here each and every class in the target variable plays major role with their own importance. Ex: Some people still use cash as they wont trust on credit cards and some others only prefer online banking or credit card like they are not interested to carry cash every time. Hence I have choosen AUC metrics.
 
 # Final model selection
 Decision Tree is selected as the final model as we got 97% accuracy. 
