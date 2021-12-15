@@ -49,8 +49,13 @@ In this research, my goal is to use this dataset to forecast the typical payment
 I assume that a trip is considered valid if it has non zero miles.  
 Found big number of observation having a distance of 0m. This is likely to be bad data, so have removed those rows.  
 Many fares surpass 55; this is a significant outlier, thus it has been eliminated.   
-Most of the trips are short.  
-I've removed the columns that aren't needed for modeling.  
+
+# Feature Selection
+* Since we are restricting the problem data to that which can be obtained before taking a taxi, we are gonna drop all but those variables.  
+
+* We have two factors derived from the location: census and community area. Because for privacy reasons some census tracks are missing, we are not going to use that factor.  
+
+* As for the target variable, we are only considering the 'Payment Type'.
 
 # Model Comparision
 ![alt text](https://github.com/pragathi1234/ChicagoTaxiTrips/blob/main/images/Screenshot%202021-12-14%20at%207.39.57%20PM.png)
